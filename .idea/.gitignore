@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+
+# //ignore the applications properties
+applications.properties
+
