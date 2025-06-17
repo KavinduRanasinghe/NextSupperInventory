@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#1a2233] text-white min-h-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex h-screen overflow-hidden">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-[#121927] h-full flex flex-col">
+      <div class="p-4 border-b border-gray-700">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center">
+            <img src="logo.jpg">
+          </div>
+          <h1 class="text-xl font-bold text-white">Next Supper</h1>
+        </div>
+      </div>
+      <div class="flex-1 py-6">
+        <nav>
+          <div class="px-4 mb-4">
+            <h2 class="text-xs uppercase text-gray-400 font-medium">Menu</h2>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 bg-blue-900/30 text-blue-400 cursor-pointer">
+            <div>🏠</div>
+            <span><a href="home.html">Home</a></span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>📦</div>
+            <span><a href="product.html">Products</a></span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>👥</div>
+            <span><a href="supplier.html">Suppliers</a></span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>🛒</div>
+            <span><a href="purchase.html">Purchase</a></span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>📈</div>
+            <span><a href="sales.html">Sales</a></span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>📄</div>
+            <span><a href="report.html">Report</a></span>
+          </div>
+        </nav>
+      </div>
+      <div class="p-4 border-t border-gray-700">
+        <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+          <div>🚪</div>
+          <span>Log out</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-auto p-6">
+      
+<br><br><br><br><br><br><br><br>
+      <!-- Stats Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div class="bg-[#1e293b] rounded-xl p-6 shadow-lg">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-gray-400 font-medium mb-1"></h3>
+              <div class="text-3xl font-bold"> Stock Report  </div>
+              <p class="text-sm text-gray-400 mt-2">  </p>
+            </div>
+            <div class="rounded-lg p-3 bg-blue-500/20 text-blue-400">📦</div>
+          </div>
+        </div>
+        <div class="bg-[#1e293b] rounded-xl p-6 shadow-lg">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-gray-400 font-medium mb-1"></h3>
+              <div class="text-3xl font-bold"> Purchase Report </div>
+              <p class="text-sm text-gray-400 mt-2">   </p>
+            </div>
+            <div class="rounded-lg p-3 bg-amber-500/20 text-amber-400">🛒</div>
+          </div>
+        </div>
+        <div class="bg-[#1e293b] rounded-xl p-6 shadow-lg">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-gray-400 font-medium mb-1"></h3>
+              <div class="text-3xl font-bold">  Stock Issued Report </div>
+              <p class="text-sm text-gray-400 mt-2">   </p>
+            </div>
+            <div class="rounded-lg p-3 bg-red-500/20 text-red-400">💰</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">    
+        <div class="lg:col-span-2 bg-[#1e293b] rounded-xl shadow-lg overflow-hidden">  
+          <div class="overflow-x-auto">            
+          </div>
+        </div>   
+      </div>
+    </main>
+
+  </body>
+</html>

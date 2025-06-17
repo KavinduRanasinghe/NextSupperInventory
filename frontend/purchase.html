@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#1a2233] text-white min-h-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Purchase Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex h-screen overflow-hidden">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-[#121927] h-full flex flex-col">
+      <div class="p-4 border-b border-gray-700">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center">
+            <img src="logo.jpg">
+          </div>
+          <h1 class="text-xl font-bold text-white">Next Supper</h1>
+        </div>
+      </div>
+      <div class="flex-1 py-6">
+        <nav>
+          <div class="px-4 mb-4">
+            <h2 class="text-xs uppercase text-gray-400 font-medium">Menu</h2>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 bg-blue-900/30 text-blue-400 cursor-pointer">
+            <div>🏠</div>
+            <span><a href="home.html">Home</a></span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>📦</div>
+            <span><a href="product.html">Products</a></span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>👥</div>
+            <span><a href="supplier.html">Suppliers</a></span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>🛒</div>
+            <span>Purchase</span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>📈</div>
+            <span><a href="sales.html">Issued</a></span>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+            <div>📄</div>
+            <span><a href="report.html">Report</a></span>
+          </div>
+        </nav>
+      </div>
+      <div class="p-4 border-t border-gray-700">
+        <div class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:bg-blue-900/20 cursor-pointer">
+          <div>🚪</div>
+          <span>Log out</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-auto p-6 space-y-6">
+
+      <!-- Header -->
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Purchase</h1>
+        <a href="addPurchase.html">
+        <button class="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+          <span class="text-lg">➕</span>
+          Add Purchase
+        </button>
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="relative">
+        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">🔍</span>
+        <input
+          type="text"
+          placeholder="Search purchase..."
+          class="w-full pl-10 pr-4 py-2 bg-[#1e293b] border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
+        />
+      </div>
+
+      
+
+      <!-- Product Table -->
+      <div class="bg-[#1e293b] rounded-xl shadow-lg overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-[#172133] text-sm text-gray-400">
+                <th class="py-3 px-4 text-left font-medium">Invoice No</th>
+                <th class="py-3 px-4 text-left font-medium">Supplier ID</th>
+                <th class="py-3 px-4 text-left font-medium">Product ID</th>
+                <th class="py-3 px-4 text-left font-medium">Payment Status</th>
+                <th class="py-3 px-4 text-left font-medium">Received Items</th>
+                <th class="py-3 px-4 text-left font-medium">Purchase Date</th>
+                <th class="py-3 px-4 text-left font-medium">Remaining Items</th>
+                <th class="py-3 px-4 text-left font-medium">Total Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-gray-700 text-sm">
+                <td class="py-4 px-4">IN01</td>
+                <td class="py-4 px-4">S01</td>
+                <td class="py-4 px-4">P93</td>
+                <td class="py-4 px-4 text-gray-400">Paid</td>
+                <td class="py-4 px-4 text-gray-400">60</td>
+                <td class="py-4 px-4 text-gray-400">2025/04/03</td>
+                <td class="py-4 px-4 text-gray-400">0</td>
+                <td class="py-4 px-4 text-gray-400">60,000</td>
+              </tr>
+              <tr class="border-t border-gray-700 text-sm">
+                <td class="py-4 px-4">IN02</td>
+                <td class="py-4 px-4">S02</td>
+                <td class="py-4 px-4">P33</td>
+                <td class="py-4 px-4 text-gray-400">Paid</td>
+                <td class="py-4 px-4 text-gray-400">100</td>
+                <td class="py-4 px-4 text-gray-400">2025/02/05</td>
+                <td class="py-4 px-4 text-gray-400">50</td>
+                <td class="py-4 px-4 text-gray-400">50000</td>
+              </tr>
+              <tr class="border-t border-gray-700 text-sm">
+                <td class="py-4 px-4">IN03</td>
+                <td class="py-4 px-4">S03</td>
+                <td class="py-4 px-4">P60</td>
+                <td class="py-4 px-4 text-gray-400">half Paid</td>
+                <td class="py-4 px-4 text-gray-400">150</td>
+                <td class="py-4 px-4 text-gray-400">2025/03/08</td>
+                <td class="py-4 px-4 text-gray-400">60</td>
+                <td class="py-4 px-4 text-gray-400">60000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>
